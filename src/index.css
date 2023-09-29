@@ -13,3 +13,8 @@
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
 }
+
+.background_gradient{
+    background: linear-gradient(90.26deg, #130EF8 0.33%, #6D12EC 10.2%, #DA16DE 100.09%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
