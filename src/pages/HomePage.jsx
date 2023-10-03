@@ -1,16 +1,12 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
-import Footer from '../components/Footer'
+import React from "react";
+import Hero from "../components/Hero";
 
 const HomePage = () => {
   return (
     <>
-        <Navbar/>
-        <Hero/>
-        <Footer/>
+      <Hero />
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

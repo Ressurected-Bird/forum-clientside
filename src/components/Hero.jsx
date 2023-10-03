@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -22,9 +23,9 @@ const Hero = () => {
           nunc amet, varius dolor. Nisl ut natoque libero et. Ipsum nunc purus.
         </p>
         <div>
-            <a href="register" className="background_gradient p-3  rounded-lg text-white  text-sm sm:text-base" >
+            <Link to={"/register"} className="background_gradient p-3  rounded-lg text-white  text-sm sm:text-base" >
               Create an Account
-            </a>
+            </Link>
         </div>
       </div>
 

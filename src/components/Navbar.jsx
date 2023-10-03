@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
@@ -7,7 +8,7 @@ const Navbar = () => {
       "
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="https://flowbite.com/" className="flex items-center">
+          <Link to={"/"} className="flex items-center">
             <img
               src="assets/logo.svg"
               className="h-10 sm:h-20 mr-3"
@@ -16,7 +17,7 @@ const Navbar = () => {
             <span className="text_gradient self-center text-2xl font-semibold whitespace-nowrap ">
               ResurrectedBird
             </span>
-          </a>
+          </Link>
           <button
             data-collapse-toggle="navbar-default"
             type="button"
@@ -44,37 +45,37 @@ const Navbar = () => {
           <div className="hidden w-full lg:block lg:w-auto" id="navbar-default">
             <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-white">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to={"/"}
                   className="block py-2  pr-4 text-gray-900 font-bold"
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to={"/about"}
                   className="block py-2  pr-4 text-gray-900 font-bold"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to={"/contact"}
                   className="block py-2  pr-4 text-gray-900 font-bold"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to={"/discussion"}
                   className="block py-2  pr-4 text-gray-900 font-bold"
                 >
                   Discussion
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
