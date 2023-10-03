@@ -7,7 +7,6 @@ const Register = () => {
       <div className="flex justify-center  my-12">
         {/* Row */}
         <div className="w-full xl:w-3/4 lg:w-11/12 flex flex-row items-center justify-center ">
-
           <div className="w-full lg:w-1/2  hidden lg:block">
             <img
               src="assets/register_img.svg"
@@ -17,9 +16,9 @@ const Register = () => {
           </div>
 
           <div className="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none flex flex-col items-center justify-center ">
-            <a href="https://flowbite.com/" className="flex items-center">
+            <Link to={"/"} className="flex items-center">
               <img src="assets/logo.svg" className="h-10" alt="Logo" />
-            </a>
+            </Link>
             <h3 className="pt-4 text-2xl text-center">Create an Account!</h3>
             <form className="px-8 pt-6 pb-8 mb-4 bg-white rounded">
               <div className="mb-4">
@@ -81,9 +80,21 @@ const Register = () => {
                 </div>
               </div>
 
-                <div  className="mb-4" >
-                    <p className="text-sm" >By continuing you indicate that you agree to <span className="text_gradient">ResurrectedBird’s</span> <a href="#" className="text-blue-500" >Terms of Service </a> and <a href="#" className="text-blue-500" > Privacy Policy</a>.</p>
-                </div>
+              <div className="mb-4">
+                <p className="text-sm">
+                  By continuing you indicate that you agree to{" "}
+                  <span className="text_gradient">ResurrectedBird’s</span>{" "}
+                  <a href="#" className="text-blue-500">
+                    Terms of Service{" "}
+                  </a>{" "}
+                  and{" "}
+                  <a href="#" className="text-blue-500">
+                    {" "}
+                    Privacy Policy
+                  </a>
+                  .
+                </p>
+              </div>
 
               <div className="mb-6 text-center">
                 <button

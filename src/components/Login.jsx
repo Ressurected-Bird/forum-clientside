@@ -13,9 +13,9 @@ const Login = () => {
           </div>
 
           <div className="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none flex flex-col items-center justify-center ">
-            <a href="https://flowbite.com/" className="flex items-center">
+            <Link to={"/"} className="flex items-center">
               <img src="assets/logo.svg" className="h-20" alt="Logo" />
-            </a>
+            </Link>
             <h3 className="pt-4 text-2xl text-center">Welcome Back</h3>
             <form className="px-8 pt-6 pb-8 mb-4 bg-white rounded">
               <div className="mb-4">
